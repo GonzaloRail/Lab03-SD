@@ -62,3 +62,13 @@ java Client nombreusuario 1500 localhost
 
 De manera similar, puedes especificar un puerto diferente al iniciar el servidor:
 java Server 1501
+
+
+
+En python es lo mismo 
+
+python server.py 
+python client.py
+y los demas metodos son lo mismo
+
+
