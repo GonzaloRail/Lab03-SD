@@ -1,33 +1,20 @@
-Instrucciones para ejecutar la aplicación de chat en Visual Studio Code
-Paso 1: Preparar el proyecto
+PARA JAVA
 
-Crea una carpeta nueva para tu proyecto (por ejemplo, "ChatApp")
-Abre Visual Studio Code
-Ve a File > Open Folder y selecciona la carpeta que creaste
-Crea tres archivos Java en la carpeta principal:
-
-ChatMessage.java
-Client.java
-Server.java
-
-
-Copia el código proporcionado en cada uno de estos archivos
-
-Paso 2: Compilar los archivos Java
+Compilar los archivos Java
 
 Abre una terminal en VS Code (Terminal > New Terminal)
 Compila todos los archivos con el siguiente comando:
 javac *.java
 
 
-Paso 3: Iniciar el servidor
+Iniciar el servidor
 
 En la terminal, ejecuta el siguiente comando para iniciar el servidor:
 java Server
 
 Verás un mensaje indicando que el servidor está esperando conexiones en el puerto 1500
 
-Paso 4: Iniciar uno o más clientes
+Iniciar uno o más clientes
 
 Abre una nueva terminal en VS Code (puedes hacerlo con el botón + en el panel de terminal)
 Ejecuta el comando:
