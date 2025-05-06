@@ -71,11 +71,11 @@ class ClientThread(threading.Thread):
                     keep_going = False
                 
                 elif cm.get_type() == ChatMessage.WHOISIN:
-                    self.write_msg(f"Lista de usuarios conectados a {datetime.now().strftime('%H:%M:%S')}")
-                    
-                    # Enviar lista de clientes activos
+                    header = f"Lista de usuarios conectados a {datetime.now().strftime('%H:%M:%S')}"
+                    self.server.broadcast(header)
                     for i, client in enumerate(self.server.clients):
-                        self.write_msg(f"{i+1}) {client.username} desde {client.date}")
+                        self.server.broadcast(f"{i+1}) {client.username} desde {client.date}")
+
             
             except Exception as e:
                 self.server.display(f"{self.username} Excepción leyendo streams: {e}")
